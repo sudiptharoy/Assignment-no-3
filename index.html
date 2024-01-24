@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-color':'#FF4240',
+                'rgb':'rgba(255, 255, 255, 0.60)',
+              }
+            }
+          }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+        .link{
+          margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="container mx-auto">
+        <!-- nav bar -->
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn gap-0 pr-0 btn-ghost  lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#424247] text-base font-manrope">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Contact</a></li>
+                      <li><a>Blog</a></li>
+                    </ul>
+                  </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold gap-0 font-manrope">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#424247] text-base">
+                    <li class="text-[#FF4240]font-manrope"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Blog</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-6 ">
+                    <img src="Frame.svg" alt="" class="hidden lg:inline-grid">
+                    <a class="btn bg-[#FF4240] text-[#FFF] w-37 text-center text-lg font-bold font-manrope">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner section -->
+        <section class="container mx-auto mt-8">
+            <div class="carousel lg:w-full">
+                <div id="slide1" class="carousel-item relative h-[200px] lg:h-[550px] w-full ">
+                    <img src="1.png" class="w-full" />
+                    <div class="absolute flex flex-col lg:justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 rounded-2xl">
+                    <a href="#slide2" class="btn btn-circle absolute lg:left-24 lg:top-20 text-[#FFF] bg-black border-0" >❮</a> 
+                    <a href="#slide2" class="btn btn-circle absolute right-0 lg:left-8 lg:top-20 text-[#FFF] bg-black border-0">❯</a>
+                    </div>
+                    <div class="font-manrope mx-auto items-center bg-black font-manrope p-8 rounded-2xl      lg:absolute lg:right-10 lg:bottom-20 lg:w-2/5 ">
+                        <h3 class="pb-4 text-2xl text-[#FFF]">
+                            Meet all the heroes from the field
+                        </h3>
+                        <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                        </p>
+                    </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full rounded-2xl" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle absolute left-24 top-20 text-[#FFF] bg-black border-0">❮</a> 
+                    <a href="#slide1" class="btn btn-circle absolute left-8 top-20 text-[#FFF] bg-black border-0">❯</a>
+                    </div>
+                    <div class="font-manrope absolute right-10 bottom-20 w-2/5 bg-black font-manrope p-8 rounded-2xl">
+                      <h3 class="pb-4 text-2xl text-[#FFF]">
+                          Meet all the heroes from the field
+                      </h3>
+                      <p class="w-9/10 text-[rgba(255,255,255,0.6)]">
+                          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+                      </p>
+                  </div>
+                </div> 
+              </div>
+        </section>
+    </header>
+    <main class="container mx-auto font-manrope">
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[30px] lg:my-[90px]">
+      <!-- Professional Hockeys Club -->
+      <section class="text-center font-manrope space-y-7">
+        <h3 class="text-4xl font-extrabold ">Professional Hockeys Club</h3>
+        <p class=" mx-auto text-base text-[rgba(19,19,24,0.60)] lg:w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[30px] lg:my-[90px]">
+      <!-- radial section -->
+      <section class="w-full container mx-auto grid grid-cols-1 text-center  lg:grid-cols-4 ">
+        <div class="h-[300px] w-[400px] lg:w-[250px]">
+          <div class="radial-progress text-[#FF4240]" style="--value:87; --size:8rem; --thickness: 10px;" role="progressbar"><span  class="text-[#131318] font-extrabold text-2xl">87%</span></div>
+          <h3 class="my-4 text-[#131318] font-semibold text-xl">Prayer Facility</h3>
+          <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0 ">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+        <div class="h-[300px] w-[400px] lg:w-[250px]">
+          <div class="radial-progress text-[#49D293]" style="--value:95; --size:8rem; --thickness: 10px;" role="progressbar"><span  class="text-[#131318] font-extrabold text-2xl">95%</span></div>
+          <h3 class="my-4 text-[#131318] font-semibold text-xl">Experienced Coach</h3>
+          <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0 ">
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+        <div class="h-[300px] w-[400px] lg:w-[250px]">
+          <div class="radial-progress text-[#FFB546]" style="--value:90; --size:8rem; --thickness: 10px;" role="progressbar"><span  class="text-[#131318] font-extrabold text-2xl">90%</span></div>
+          <h3 class="my-4 text-[#131318] font-semibold text-xl">Senior Player</h3>
+          <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0" >
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+        <div class="h-[300px] w-[400px] lg:w-[250px]">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:8rem; --thickness: 10px;" role="progressbar"><span class="text-[#131318] font-extrabold text-2xl">80%</span></div>
+          <h3 class="my-4 text-[#131318] font-semibold text-xl">Training Ground</h3>
+          <p class="text-[rgba(19,19,24,0.60)] w-[250px] text-base text-center ml-20 lg:ml-0 " >
+            Amet consectetur. Condimentum dignissim adipiscing .
+          </p>
+        </div>
+      </section>
+
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[30px] lg:my-[60px]">
+      <!-- Program Sections -->
+      <section class="text-center font-manrope space-y-7">
+        <h3 class="text-4xl font-extrabold">Program Sections</h3>
+        <p class=" mx-auto text-base text-[rgba(19,19,24,0.60)] lg:w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <!-- card section -->
+      <section class=" flex flex-col gap-5 lg:grid lg:grid-cols-2">
+        <div class="">
+          <div class="card bg-base-100 shadow-l image-full">
+          <figure><img src="2.png" alt="Shoes" class="lg:w-[758px]"/></figure>
+          <div class="card-body">
+            <h2 class="card-title mt-7 text-[#FFF] font-extrabold text-2xl">Junior Program</h2>
+            <p class="text-[#FFF] font-medium text-base mt-6 lg:w-[500px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+            <div class="card-actions justify-start">
+              <button class="btn bg-[#FF4240] text-[#FFF] font-bold text-xl border-0 mt-4">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="">
+          <div class="card bg-base-100 shadow-l image-full">
+            <figure><img src="3.png" alt="Shoes" class="lg:w-[758px]"/></figure>
+            <div class="card-body">
+              <h2 class="card-title mt-7 text-[#FFF] font-extrabold text-2xl">Junior Program</h2>
+              <p class="text-[#FFF] font-medium text-base mt-6 lg:w-[500px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <div class="card-actions justify-start">
+                <button class="btn bg-[#FF4240] text-[#FFF] font-bold text-xl border-0 mt-4">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-2">
+          <div class="card bg-base-100 shadow-l image-full">
+            <figure><img src="4.png" alt="Shoes" class="lg:w-[1536px]"/></figure>
+            <div class="card-body">
+              <h2 class="card-title lg:mt-60 text-[#FFF] font-extrabold text-2xl">Junior Program</h2>
+              <p class="text-[#FFF] font-medium text-base mt-6 lg:w-[500px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <div class="card-actions justify-start">
+                <button class="btn bg-[#FF4240] text-[#FFF] font-bold text-xl border-0 mt-4">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <!-- Our New Products -->
+      <section class="text-center font-manrope space-y-7">
+        <h3 class="text-4xl font-extrabold">Our New Products</h3>
+        <p class=" mx-auto text-base text-[rgba(19,19,24,0.60)] lg:w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <!-- Our New Products section card-->
+      <section class="">
+        <div class="lg:grid lg:grid-cols-2 lg:space-x-4">
+          <div class=" px-8 py-3 lg:px-0">
+            <div class=" lg:flex gap-x-4 border-2 border-[rgba(19,19,24,0.10)] rounded-2xl p-8 lg:p-4 lg:pt-8">
+              <div class="">
+                  <img src="5.png" alt="Loading" class=" mx-auto mb-5">
+              </div>
+              <div class="w-80 h-48 space-y-4">                
+                  <img src="Group 36.png" alt="Loading">
+                  <h1 class=" font-bold text-black text-lg h-4 font-manrope">World's Best jacket</h1>
+                  <h1 class="font-bold text-zinc-400 text-xs  font-manrope w-4/5">your Subscription we offer you the jacket ony in a reasonable prices.</h1>
+                  <div class="lg:flex lg:align-middle gap-x-4">
+                      <h1 class="font-bold text-red-600 text-xs  font-manrope mb-3">Price - $22.00 </h1>
+                      <div class="flex flex-wrap">
+                        <img src="Frame (1).jpg" alt="Loading">
+                        <h1 class="font-bold text-zinc-400 text-xs  font-manrope pt-1 "> Delivery fee:Free</h1>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-8 py-3 lg:px-0">
+            <div class=" lg:flex gap-x-4 border-2 border-[rgba(19,19,24,0.10)] rounded-2xl p-8 lg:p-4 lg:pt-8">
+              <div class="">
+                  <img src="6.png" alt="Loading" class=" mx-auto mb-5">
+              </div>
+              <div class="w-80 h-48 space-y-4">                
+                  <img src="Group 36.png" alt="Loading">
+                  <h1 class=" font-bold text-black text-lg h-4 font-manrope">World's Best jacket</h1>
+                  <h1 class="font-bold text-zinc-400 text-xs  font-manrope w-4/5">your Subscription we offer you the jacket ony in a reasonable prices.</h1>
+                  <div class="lg:flex lg:align-middle gap-x-4">
+                      <h1 class="font-bold text-red-600 text-xs  font-manrope mb-3">Price - $22.00 </h1>
+                      <div class="flex flex-wrap">
+                        <img src="Frame (1).jpg" alt="Loading">
+                        <h1 class="font-bold text-zinc-400 text-xs  font-manrope pt-1 "> Delivery fee:Free</h1>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-8 py-3 lg:px-0">
+            <div class=" lg:flex gap-x-4 border-2 border-[rgba(19,19,24,0.10)] rounded-2xl p-8 lg:p-4 lg:pt-8">
+              <div class="">
+                  <img src="7.png" alt="Loading" class=" mx-auto mb-5">
+              </div>
+              <div class="w-80 h-48 space-y-4">                
+                  <img src="Group 36.png" alt="Loading">
+                  <h1 class=" font-bold text-black text-lg h-4 font-manrope">World's Best jacket</h1>
+                  <h1 class="font-bold text-zinc-400 text-xs  font-manrope w-4/5">your Subscription we offer you the jacket ony in a reasonable prices.</h1>
+                  <div class="lg:flex lg:align-middle gap-x-4">
+                      <h1 class="font-bold text-red-600 text-xs  font-manrope mb-3">Price - $22.00 </h1>
+                      <div class="flex flex-wrap">
+                        <img src="Frame (1).jpg" alt="Loading">
+                        <h1 class="font-bold text-zinc-400 text-xs  font-manrope pt-1 "> Delivery fee:Free</h1>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-8 py-3 lg:px-0">
+            <div class=" lg:flex gap-x-4 border-2 border-[rgba(19,19,24,0.10)] rounded-2xl p-8 lg:p-4 lg:pt-8">
+              <div class="">
+                  <img src="8.png" alt="Loading" class=" mx-auto mb-5">
+              </div>
+              <div class="w-80 h-48 space-y-4">                
+                  <img src="Group 36.png" alt="Loading">
+                  <h1 class=" font-bold text-black text-lg h-4 font-manrope">World's Best jacket</h1>
+                  <h1 class="font-bold text-zinc-400 text-xs  font-manrope w-4/5">your Subscription we offer you the jacket ony in a reasonable prices.</h1>
+                  <div class="lg:flex lg:align-middle gap-x-4">
+                      <h1 class="font-bold text-red-600 text-xs  font-manrope mb-3">Price - $22.00 </h1>
+                      <div class="flex flex-wrap">
+                        <img src="Frame (1).jpg" alt="Loading">
+                        <h1 class="font-bold text-zinc-400 text-xs  font-manrope pt-1 "> Delivery fee:Free</h1>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-8 py-3 lg:px-0">
+            <div class=" lg:flex gap-x-4 border-2 border-[rgba(19,19,24,0.10)] rounded-2xl p-8 lg:p-4 lg:pt-8">
+              <div class="">
+                  <img src="9.png" alt="Loading" class=" mx-auto mb-5">
+              </div>
+              <div class="w-80 h-48 space-y-4">                
+                  <img src="Group 36.png" alt="Loading">
+                  <h1 class=" font-bold text-black text-lg h-4 font-manrope">World's Best jacket</h1>
+                  <h1 class="font-bold text-zinc-400 text-xs  font-manrope w-4/5">your Subscription we offer you the jacket ony in a reasonable prices.</h1>
+                  <div class="lg:flex lg:align-middle gap-x-4">
+                      <h1 class="font-bold text-red-600 text-xs  font-manrope mb-3">Price - $22.00 </h1>
+                      <div class="flex flex-wrap">
+                        <img src="Frame (1).jpg" alt="Loading">
+                        <h1 class="font-bold text-zinc-400 text-xs  font-manrope pt-1 "> Delivery fee:Free</h1>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-8 py-3 lg:px-0">
+            <div class=" lg:flex gap-x-4 border-2 border-[rgba(19,19,24,0.10)] rounded-2xl p-8 lg:p-4 lg:pt-8">
+              <div class="">
+                  <img src="10.png" alt="Loading" class=" mx-auto mb-5">
+              </div>
+              <div class="w-80 h-48 space-y-4">                
+                  <img src="Group 36.png" alt="Loading">
+                  <h1 class=" font-bold text-black text-lg h-4 font-manrope">World's Best jacket</h1>
+                  <h1 class="font-bold text-zinc-400 text-xs  font-manrope w-4/5">your Subscription we offer you the jacket ony in a reasonable prices.</h1>
+                  <div class="lg:flex lg:align-middle gap-x-4">
+                      <h1 class="font-bold text-red-600 text-xs  font-manrope mb-3">Price - $22.00 </h1>
+                      <div class="flex flex-wrap">
+                        <img src="Frame (1).jpg" alt="Loading">
+                        <h1 class="font-bold text-zinc-400 text-xs  font-manrope pt-1 "> Delivery fee:Free</h1>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <!-- Clients Question header  -->
+      <section class="text-center font-manrope space-y-7">
+        <h3 class="text-4xl font-extrabold">Clients Question</h3>
+        <p class=" mx-auto text-base text-[rgba(19,19,24,0.60)] lg:w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <!-- Clients Question main part -->
+      <section class="container mx-auto p-[20px]">
+        <div class="grid gap-6 lg:grid-cols-3 p-[20px] border-[rgba(19, 19, 24, 0.10)] border-[2px] rounded-2xl lg:p-[40px]">
+          <div class="lg:h-[480px] lg:w-[500px]">
+            <img src="11.png" alt="" class="w-fit ">
+          </div>
+          <div class="lg:col-span-2 ">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium bg-[#FFF]">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content bg-[#FFF]"> 
+                <p>hello</p>
+                <hr>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium bg-[#FFF]">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content bg-[#FFF]"> 
+                <p>hello</p><hr>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium bg-[#FFF]">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content bg-[#FFF]"> 
+                <p>hello</p><hr>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium bg-[#FFF]">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content bg-[#FFF]"> 
+                <p>hello</p><hr>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium bg-[#FFF]">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content bg-[#FFF]"> 
+                <p>hello</p><hr>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium bg-[#FFF]">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content bg-[#FFF]"> 
+                <p>hello</p><hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Get In Touch section heading -->
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <section class="text-center font-manrope space-y-7">
+        <h3 class="text-4xl font-extrabold">Get In Touch</h3>
+        <p class=" mx-auto text-base text-[rgba(19,19,24,0.60)] lg:w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </section>
+      <!-- horizontal line -->
+      <hr class=" border-dashed text-[rgba(19,19,24,0.20)] my-[60px] lg:my-[60px]">
+      <!-- Get In Touch section main part -->
+      <section class="lg:flex">
+        <div class="border-[rgba(19,19,24,0.10)] border-2 p-5 rounded-2xl m-4 space-y-5 lg:m-10 lg:p-10 lg:space-y-9 lg:w-[500px] lg:">
+          <div class="card card-compact bg-base-100 shadow-xl bg-[rgba(188,237,109,0.10)] p-5 lg:h-[220px]">
+            <img src="Group 1171275317.png" alt="Shoes" class="ml-5 mt-10 w-[48px] h-[48px]" >
+            <div class="card-body">
+              <h2 class="card-title">Phone Number </h2>
+              <p>(+62) 123-321-543</p>
+            </div>
+          </div>
+          <div class="card card-compact bg-base-100 shadow-xl bg-[rgba(253,221,95,0.10)] p-5 lg:h-[220px]">
+            <img src="Group 1171275318.png" alt="Shoes" class="ml-5 w-[48px] h-[48px] mt-10" >
+            <div class="card-body">
+              <h2 class="card-title">Email : </h2>
+              <p>hockeys@support.com</p>
+            </div>
+          </div>
+          <div class="card card-compact bg-base-100 shadow-xl bg-[rgba(98,156,243,0.10)] p-5 lg:h-[220px]">
+            <img src="Group 1171275321.png" alt="Shoes" class="ml-5 w-[48px] h-[48px] mt-10" >
+            <div class="card-body">
+              <h2 class="card-title">Location : </h2>
+              <p>152/1 Mohakhali Wireless Gate</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-[800px]">
+          <form action="">
+            <div class="px-4 lg:pt-10 grid lg:grid-cols-2 lg:space-x-4">
+              <label class="form-control w-full max-w-xs lg:pl-4 lg:pb-10">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">What is your name?</span>
+                </div>
+                <input type="text" placeholder="Type here" class="input input-bordered w-[368px] h-[64px] bg-[rgba(19,19,24,0.03)] rgba(19, 19, 24, 0.30) text-base border-0" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">What is your name?</span>
+                </div>
+                <input type="text" placeholder="Type here" class="input input-bordered w-[368px] h-[64px] bg-[rgba(19,19,24,0.03)] text-[rgba(19,19,24,0.30)] text-base border-0" />
+              </label>
+              <label class="form-control w-full max-w-xs lg:pb-10">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">What is your name?</span>
+                </div>
+                <input type="text" placeholder="Type here" class="input input-bordered w-[368px] h-[64px] bg-[rgba(19,19,24,0.03)] text-[rgba(19,19,24,0.30)] text-base border-0" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">What is your name?</span>
+                </div>
+                <input type="text" placeholder="Type here" class="input input-bordered w-[368px] h-[64px] bg-[rgba(19,19,24,0.03)] text-[rgba(19,19,24,0.30)] text-base border-0" />
+              </label>
+              <label class="form-control">
+                <div class="label">
+                  <span class="label-text text-[#131318] font-bold text-xl">Your bio<span>
+                </div>
+                <textarea class="textarea textarea-bordered border-0 bg-[rgba(19,19,24,0.03)] text-[rgba(19,19,24,0.30)] text-base w-[368px] h-[204px]  w-coustom lg:h-[400px] lg:w-[750px]" placeholder="Bio"></textarea>
+              </label>
+              <button class="btn btn-wide mt-5 w-full bg-[#FF4240] text-[#FFF] border-0 lg:col-span-2 lg:w-[750px]">Wide</button>
+
+            </div>
+
+          </form>
+        </div>
+      </section>
+      <!-- Get In Touch section last part -->
+      <section class="bg-[rgba(19,19,24,0.03)] text-center mx-auto p-10 m-10 rounded">
+        <h3 class="font-extrabold text-xl lg:text-3xl text-[#131318] p-7">
+          Social Media
+        </h3>
+        <div>
+          <img src="Social.svg" alt="" class="w-fit mx-auto">
+        </div>
+      </section>
+    </main>
+    <footer class="footer p-10 bg-[#131318] text-base-content text-[rgba(255,255,255,0.60)] lg:h-[500px] lg:pl-[190px] lg:pt-[100px] lg:w-full justify-center">
+      <aside class="mx-auto">
+        <h3 class="text-[color:#FFF] font-extrabold text-3xl pb-5 ">
+          Get In Touch
+        </h3>
+        <p class="text-center pb-[10px] lg:text-left">ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+        <div class="flex justify-center gap-2">
+          <div>
+            <img src="Frame.png" alt="">
+          </div>
+          <div>
+            hockeys@support.com
+          </div>
+        </div>
+        <div class="flex justify-center gap-2">
+          <div>
+            <img src="Frame (1).png" alt="">
+          </div>
+          <div class="pt-1">
+            (+62) 123-321-543
+          </div>
+        </div>
+      </aside> 
+      <div class="flex pl-[20px] gap-[40px] lg:gap-[290px] lg:pl-[0px]">
+        <div class="">
+          <nav class="flex flex-col">
+            <header class="footer-title text-[#FFF] ">Company</header> 
+            <a class="link link-hover lg:pt-[20px]">About us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Careers</a>
+            <a class="link link-hover">News & Article</a>
+            <a class="link link-hover">Legal Notice</a>
+          </nav> 
+        </div>
+        <div>
+          <nav class="flex flex-col">
+            <header class="footer-title text-[#FFF]">Support</header> 
+            <a class="link link-hover lg:pt-[20px]">Help Center</a>
+            <a class="link link-hover">FQA</a>
+            <a class="link link-hover">Ticket Support</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+        </div> 
+      </div>
+      <nav class="lg:pl-[0px] pl-[90px]">
+        <header class="footer-title text-[#FFF]">Services</header> 
+        <a class="link link-hover lg:pt-[20px]">Academy</a>
+        <a class="link link-hover justify-center align-middle text-center">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockeys for kids</a>
+        <a class="link link-hover">Hockeys for Adult</a>
+      </nav>
+    </footer>
+</body>
+</html>
